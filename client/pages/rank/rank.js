@@ -31,6 +31,24 @@ Page({
         }
     },
 
+    /**
+     *下拉刷新
+     */
+    onPullDownRefresh: function () {
+        wx.stopPullDownRefresh();
+        var that = this;
+        nami.request({
+            loading: true,
+            url: '/request/scholes_pay/rank.groovy',
+            success: function (res) {
+                that.setData({
+                    dataList: res.data.list
+                });
+                app.data.rankLoaded = true;//加载完成
+            }
+        });
+    },
+
     onShareAppMessage: function () {
         return {
             title: '赞赏排行榜',

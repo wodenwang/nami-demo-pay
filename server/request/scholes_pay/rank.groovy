@@ -10,7 +10,7 @@ select b.*,a.TOTAL_FEE from
 	select sum(TOTAL_FEE) TOTAL_FEE,OPEN_ID from PAY_DETAIL group by OPEN_ID
 ) a 
 left join PAY_USER b on a.OPEN_ID = b.OPEN_ID
-order by a.TOTAL_FEE desc
+order by a.TOTAL_FEE desc,b.UPDATE_TIME asc 
 limit 10
 """.toString());
 
