@@ -1,0 +1,89 @@
+page {
+  background-color: #fbf9fe;
+}
+
+.container {
+  width: 100%;
+  margin-bottom: 10rpx;
+}
+
+.top-wrap {
+  width: 100%;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #d55a4a;
+  margin-top: -90px;
+  position: relative;
+}
+
+.top-wrap .group {
+  width: 100%;
+  position: absolute;
+  bottom: -110px;
+  text-align: center;
+}
+
+.top-wrap image {
+  width: 196rpx;
+  height: 196rpx;
+  border-radius: 50%;
+}
+
+.top-wrap .name {
+  width: 100%;
+  display: inline-block;
+  margin-top: 30px;
+  color: #4e5b65;
+}
+
+.line {
+  display: block;
+  width: 600rpx;
+  margin: 0 auto;
+  height: 1px;
+  background-color: #f7f7f7;
+  margin-top: 8.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.price-list {
+  padding: 0 15rpx;
+  text-align: center;
+  flex-direction: row;
+}
+
+.price-list .item {
+  float: left;
+  margin-right: 10rpx;
+  margin-left: 10rpx;
+  margin-bottom: 20px;
+  width: 220rpx;
+}
+
+.price-list .price-box {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #d55a4a;
+  text-align: center;
+}
+
+.price-list .price-box em {
+  line-height: 50px;
+  color: #d55a4a;
+  font-size: 15px;
+}
+
+.price-list .price-box .price {
+  font-size: 25px;
+  display: inline-block;
+}
+
+.price-list .price-box.active {
+  background-color: #d55a4a;
+}
+
+.price-list .price-box.active em {
+  color: #fff;
+  background-color: #d55a4a;
+}

@@ -1,0 +1,75 @@
+page {
+  background-color: #fbf9fe;
+}
+
+.container {
+  width: 100%;
+  margin-bottom: 50rpx;
+}
+
+.rank-item {
+  height: 140rpx;
+  background: #fff;
+  margin-bottom: 8rpx;
+  padding: 20rpx 20rpx 20rpx 50rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.rank-item .rank-img {
+  width: 100rpx;
+  height: 100rpx;
+  float: left;
+  margin-right: 50rpx;
+  position: relative;
+}
+
+.rank-item .rank-img image {
+  position: absolute;
+  border-radius: 50%;
+  width: 100rpx;
+  height: 100rpx;
+  top: 0;
+  left: 0;
+}
+
+.rank-item .rank-name {
+  font-size: 32rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #4e5b65;
+  font-weight: bold;
+}
+
+.rank-item .rank-full {
+  font-size: 32rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #4e5b65;
+}
+
+.rank-item .rank-price {
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #d55a4a;
+}
+
+.rank-item .rank-uv text {
+  font-size: 38rpx;
+  position: absolute;
+  height: 100rpx;
+  line-height: 100rpx;
+  bottom: 20rpx;
+  right: 20rpx;
+  color: #777;
+}
+
+.rank-item .rank-uv image {
+  position: absolute;
+  width: 100rpx;
+  height: 100rpx;
+  bottom: 20rpx;
+  right: 20rpx;
+}

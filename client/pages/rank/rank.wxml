@@ -1,0 +1,20 @@
+<view class="container">
+  <view wx:for="{{dataList}}" wx:key="item">
+    <view class="rank-item">
+      <view class="rank-img">
+        <image src="{{item.avatar}}"></image>
+      </view>
+      <block wx:if="{{item.my}}">
+        <view class="rank-name">{{item.nickName}}</view>
+        <view class="rank-price">贡献：￥{{item.fee}}</view>
+      </block>
+      <block wx:if="{{!item.my}}">
+        <view class="rank-full">{{item.nickName}}</view>
+      </block>
+      <view class="rank-uv">
+        <text wx:if="{{item.rank>3}}">第 {{item.rank}} 名</text>
+        <image src="/images/jp{{item.rank}}.png" wx:if="{{item.rank<=3}}" />
+      </view>
+    </view>
+  </view>
+</view>

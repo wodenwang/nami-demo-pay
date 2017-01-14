@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/rank/rank"
+  ],
+  "window": {
+    "navigationBarTextStyle": "#ffffff",
+    "navigationBarTitleText": "赞赏生姜头",
+    "navigationBarBackgroundColor": "#d55a4a",
+    "backgroundColor": "#d55a4a"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#d55a4a",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/pay.png",
+        "selectedIconPath": "images/pay_on.png",
+        "text": "赞赏"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "iconPath": "images/rank.png",
+        "selectedIconPath": "images/rank_on.png",
+        "text": "排行榜"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}
