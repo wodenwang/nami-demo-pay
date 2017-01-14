@@ -2,11 +2,7 @@
 NAMI开发案例，2个客户端页面，3个服务端接口，2张数据库表，实现完整的支付、登录、会话管理、OPEN_ID等资料获取，**十分适合新手入门的DEMO**。
 
 ## 效果图
-![](http://i.imgur.com/qKJCSgM.jpg)
-<br/>
-![](http://i.imgur.com/1SFZuFb.jpg)
-<br/>
-![](http://i.imgur.com/NTIfLdk.jpg)
+![](http://i.imgur.com/JsImfs7.jpg)
 
 ## 客户端部署
 - clone项目（或者下载项目包）
