@@ -1,20 +1,23 @@
 <view class="container">
 
   <!-- 头部 -->
-  <view class="top-wrap">
+  <view class="header">
     <view class="group">
       <image src="{{logo}}" />
-      <p class="name">{{title}}</p>
+      <text class="name">{{title}}</text>
     </view>
   </view>
-  <span class="line"></span> 
+
+  <!-- 分割线 -->
+  <view class="line"></view> 
 
   <!-- 金额列表 -->
   <view class="price-list">
     <view class="item" wx:for="{{prices}}" wx:key="item" data-item="{{item}}" bindtap="selectItem">
       <view class="price-box {{selected==item?'active':''}}">
-        <em><span class="price">{{item}}</span>  元</em> 
+        <em><text class="price">{{item}}</text>  元</em> 
       </view>
     </view>
   </view>
+
 </view>

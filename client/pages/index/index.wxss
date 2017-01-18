@@ -7,32 +7,32 @@ page {
   margin-bottom: 10rpx;
 }
 
-.top-wrap {
+.header {
   width: 100%;
-  height: 180px;
+  height: 320rpx;
   border-radius: 50%;
   background-color: #d55a4a;
-  margin-top: -90px;
+  margin-top: -160rpx;
   position: relative;
 }
 
-.top-wrap .group {
+.header .group {
   width: 100%;
   position: absolute;
-  bottom: -110px;
+  bottom: -200rpx;
   text-align: center;
 }
 
-.top-wrap image {
+.header image {
   width: 196rpx;
   height: 196rpx;
   border-radius: 50%;
 }
 
-.top-wrap .name {
+.header .name {
   width: 100%;
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 30rpx;
   color: #4e5b65;
 }
 
@@ -41,9 +41,9 @@ page {
   width: 600rpx;
   margin: 0 auto;
   height: 1px;
-  background-color: #f7f7f7;
-  margin-top: 8.25rem;
-  margin-bottom: 2.5rem;
+  background-color: #dddddd;
+  margin-top: 300rpx;
+  margin-bottom: 100rpx;
 }
 
 .price-list {
@@ -56,26 +56,26 @@ page {
   float: left;
   margin-right: 10rpx;
   margin-left: 10rpx;
-  margin-bottom: 20px;
+  margin-bottom: 20rpx;
   width: 220rpx;
 }
 
 .price-list .price-box {
   width: 100%;
-  height: 50px;
-  border-radius: 10px;
+  height: 100rpx;
+  border-radius: 20rpx;
   border: 1px solid #d55a4a;
   text-align: center;
 }
 
 .price-list .price-box em {
-  line-height: 50px;
+  line-height: 100rpx;
   color: #d55a4a;
-  font-size: 15px;
+  font-size: 30rpx;
 }
 
 .price-list .price-box .price {
-  font-size: 25px;
+  font-size: 50rpx;
   display: inline-block;
 }
 

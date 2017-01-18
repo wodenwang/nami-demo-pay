@@ -1,9 +1,15 @@
 <view class="container">
-  <view wx:for="{{dataList}}" wx:key="item">
+  <block wx:for="{{dataList}}" wx:key="item">
+
+    <!-- 循环体,每一行排名 -->
     <view class="rank-item">
+
+      <!--头像-->
       <view class="rank-img">
         <image src="{{item.avatar}}"></image>
       </view>
+
+      <!--展示昵称,以及贡献值-->
       <block wx:if="{{item.my}}">
         <view class="rank-name">{{item.nickName}}</view>
         <view class="rank-price">贡献：￥{{item.fee}}</view>
@@ -11,10 +17,12 @@
       <block wx:if="{{!item.my}}">
         <view class="rank-full">{{item.nickName}}</view>
       </block>
+
+      <!--排名-->
       <view class="rank-uv">
         <text wx:if="{{item.rank>3}}">第 {{item.rank}} 名</text>
         <image src="/images/jp{{item.rank}}.png" wx:if="{{item.rank<=3}}" />
       </view>
     </view>
-  </view>
+  </block>
 </view>
