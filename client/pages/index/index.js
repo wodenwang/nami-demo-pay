@@ -71,6 +71,26 @@ Page({
           }
         });
 
+      },
+      fail: function (res) {
+        //弹出对话框提示支付失败信息
+        wx.showModal({
+          showCancel: false,
+          title: '提示',
+          content: res.data.msg,
+          success: function (res) {
+            if (res.confirm) {
+              console.log('用户点击确定');
+              nami.getUserInfo((userInfo) => {
+                console.log("已获取数据", userInfo);
+                app.data.userInfo = userInfo;
+              }, () => {
+                console.log("用户拒绝提供信息");
+              });
+            }
+          }
+        });
+        that.setData({ selected: 0 });//取消选中
       }
     });
   }

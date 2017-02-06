@@ -7,6 +7,10 @@
 
 //获取当前用户
 def user = session.appUser();
+log.debug("user:{}",user);
+if(!user?.nickName){
+	nami.error("用户拒绝提供资料,无法支付.");
+}
 
 //更新用户信息
 if(db.find("select OPEN_ID from PAY_USER where OPEN_ID=?",user.openId)){//找得到则更新
