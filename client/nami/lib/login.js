@@ -3,27 +3,49 @@ var constant = require('./constant')
 
 const LOGIN_URL = `${config.host}/login.nami`;//NAMI登录服务
 const FULL_USER_INFO_URL = `${config.host}/userInfo.nami`;//获取unionid并保存在服务端
+const CHECK_LOGIN_URL = `${config.host}/checkLogin.nami`;//校验是否登录
+
+/**
+ * 校验登录
+ */
+var checkLogin = (success, fail) => {
+    var namiToken = wx.getStorageSync(constant.NAMI_TOKEN);
+    if (!namiToken) {
+        typeof fail == "function" && fail();
+    } else {
+        wx.checkSession({
+            success: function () {
+                wx.request({
+                    url: CHECK_LOGIN_URL,
+                    data: {
+                        namiToken: namiToken
+                    },
+                    complete: function (res) {
+                        if (res.statusCode != 200) {//失败
+                            typeof fail == "function" && fail();
+                        } else {//成功
+                            typeof success == "function" && success();
+                        }
+                    }
+                })
+            },
+            fail: function () {
+                typeof fail == "function" && fail();
+            }
+        })
+    }
+}
 
 /**
  * 登录
  */
 var login = (success, fail) => {
-    var namiToken = wx.getStorageSync(constant.NAMI_TOKEN);
-    if (namiToken) {
-        wx.checkSession({
-            success: function () {
-                //登录态未过期
-                //do nothing
-                console.log("已登录");
-                typeof success == "function" && success();
-            },
-            fail: function () {
-                remoteLogin(success, fail)
-            }
-        })
-    } else {
+    checkLogin(() => {
+        //DO NOTHING
+        console.log("已登录");
+    }, () => {
         remoteLogin(success, fail)
-    }
+    });
 }
 
 /**
@@ -76,8 +98,6 @@ var getUserInfo = (success, fail) => {
                     url: FULL_USER_INFO_URL,
                     data: {
                         namiToken: wx.getStorageSync(constant.NAMI_TOKEN),
-                        rawData: res.rawData,
-                        signature: res.signature,
                         encryptedData: res.encryptedData,
                         iv: res.iv
                     }, success: function (requestRes) {
@@ -95,5 +115,6 @@ var getUserInfo = (success, fail) => {
 
 module.exports = {
     login: login,
+    checkLogin: checkLogin,
     getUserInfo: getUserInfo
 }
