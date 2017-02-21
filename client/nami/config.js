@@ -1,7 +1,8 @@
 /**
  * 连接NAMI服务端地址
  */
-const HOST = "http://localhost:8080";
+const HOST = "https://scholes.gzriver.com";
+//const HOST = "http://localhost:8080";
 
 /**
  * 是否需要获取unionid
