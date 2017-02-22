@@ -1,5 +1,6 @@
 # NAMI-DEMO 全栈生姜头赞赏
-NAMI开发案例，2个客户端页面，3个服务端接口，2张数据库表，实现完整的支付、登录、会话管理、OPEN_ID等资料获取，**十分适合新手入门的DEMO**。
+NAMI开发案例，2个客户端页面，3个服务端接口，2张数据库表，实现完整的支付、登录、会话管理、OPEN_ID等资料获取，**十分适合新手入门的DEMO**。<br>
+更详细的教程：[微信小程序《赞赏》案例实战](https://github.com/wodenwang/nami-demo-pay/blob/master/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E3%80%8A%E8%B5%9E%E8%B5%8F%E3%80%8B%E6%A1%88%E4%BE%8B%E5%AE%9E%E6%88%98.MD)
 
 ## 效果图
 ![](http://i.imgur.com/JsImfs7.jpg)
