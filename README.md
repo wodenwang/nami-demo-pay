@@ -3,7 +3,7 @@ NAMI开发案例，2个客户端页面，3个服务端接口，2张数据库表�
 
 ## 真机体验
 ![](http://i.imgur.com/Qj27zI0.jpg)
-<br/>
+
 *2017年4月12日审核通过*
 
 ## 效果图
@@ -12,7 +12,7 @@ NAMI开发案例，2个客户端页面，3个服务端接口，2张数据库表�
 ## 客户端部署
 - clone项目（或者下载项目包）
 - 打开小程序开发工具，导入项目的client文件夹；直接运行可以直连全栈生姜头部署在腾讯云上的NAMI服务；
-<br/>
+
 ![](http://i.imgur.com/HX52vQy.png)
 
 ## 服务端部署
@@ -21,7 +21,7 @@ NAMI开发案例，2个客户端页面，3个服务端接口，2张数据库表�
 - 打开NAMI内置的h2数据库（windows版本可直接运行db.bat），执行本项目server/sql文件夹的建表语句；如需使用mysql等其他数据库，请自行修改NAMI根目录中conf/jdbc.properties的配置内容；
 - 修改NAMI根目录中conf/wx.properties，填入小程序appid与appsecrect，以及小程序支付相关密匙；
 - 启动NAMI，修改客户端的nami/config.js文件，将地址配置到自行部署的NAMI服务器；
-<br/>
+
 ![](http://i.imgur.com/e2d7abP.png)
 
 ## 其他注意事项
