@@ -1,6 +1,10 @@
 # NAMI-DEMO 全栈生姜头赞赏
-NAMI开发案例，2个客户端页面，3个服务端接口，2张数据库表，实现完整的支付、登录、会话管理、OPEN_ID等资料获取，**十分适合新手入门的DEMO**。<br>
-更详细的教程：[微信小程序《赞赏》案例实战](https://github.com/wodenwang/nami-demo-pay/blob/master/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E3%80%8A%E8%B5%9E%E8%B5%8F%E3%80%8B%E6%A1%88%E4%BE%8B%E5%AE%9E%E6%88%98.MD)
+NAMI开发案例，2个客户端页面，3个服务端接口，2张数据库表，实现完整的支付、登录、会话管理、OPEN_ID等资料获取，**十分适合新手入门的DEMO**。
+
+## 真机体验
+![](http://i.imgur.com/Qj27zI0.jpg)
+<br/>
+*2017年4月12日审核通过*
 
 ## 效果图
 ![](http://i.imgur.com/JsImfs7.jpg)
@@ -28,7 +32,7 @@ NAMI开发案例，2个客户端页面，3个服务端接口，2张数据库表�
 ## 相关资料
 - NAMI：[https://github.com/wodenwang/nami](https://github.com/wodenwang/nami)
 - NAMI客户端：[https://github.com/wodenwang/nami-client](https://github.com/wodenwang/nami-client)
-- 腾讯云小程序解决方案：[https://www.qcloud.com/solution/la?utm_source=qcloudbanner&utm_medium=banner1&utm_campaign=qcloud](https://www.qcloud.com/solution/la?utm_source=qcloudbanner&utm_medium=banner1&utm_campaign=qcloud)
-- 更多内容，请关注“全栈生姜头”
-<br/>
+- 详细教程（知乎）：[https://zhuanlan.zhihu.com/p/25372448](https://zhuanlan.zhihu.com/p/25372448)
+
+## 更多内容，请关注“全栈生姜头”
 ![](http://i.imgur.com/ZbGLfNo.jpg)
